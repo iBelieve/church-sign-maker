@@ -1,0 +1,150 @@
+.app {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.sign-input {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #fcfcfc;
+  resize: none;
+}
+
+.sign-input:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.sign-input:focus {
+  border-color: #007df4;
+  outline: none;
+}
+
+.letters-sections {
+  margin-top: 2rem;
+}
+
+.letters-section--grab .letter {
+  color: #38a169;
+  border-color: #38a169;
+  background-color: #38a16910;
+}
+
+.letters-section--keep .letter {
+  color: #3182ce;
+  border-color: #3182ce;
+  background-color: #3182ce10;
+}
+
+.letters-section--take .letter {
+  color: #e53e3e;
+  border-color: #e53e3e;
+  background-color: #e53e3e10;
+}
+
+.letters-title {
+  text-align: center;
+}
+
+.letters-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.letter-item {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  flex-basis: 50%;
+}
+
+.letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 0.3rem 0.3rem 0 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fafafa;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .inputs {
+    align-items: center;
+  }
+
+  .sign-input {
+    width: 25rem;
+  }
+
+  .letter-item {
+    flex-basis: 33%;
+  }
+}
+
+@media (min-width: 900px) {
+  .title {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .inputs {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sign-input:not(:first-child) {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  .letters-sections {
+    margin-top: 4rem;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .letters-section {
+    flex: 1;
+  }
+
+  .letter-item {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .letters-sections {
+    align-self: center;
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "church-sign-maker",
+  "version": "1.0.0",
+  "description": "Church Sign Maker",
+  "main": "src/index.tsx",
+  "repository": "https://github.com/iBelieve/church-sign-maker",
+  "author": "Michael Spencer <sonrisesoftware@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "deploy": "surge --project dist --domain churchsign.surge.sh"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.141",
+    "@types/node": "^12.7.11",
+    "@types/react": "^16.9.5",
+    "@types/react-dom": "^16.9.1",
+    "parcel-bundler": "^1.12.3",
+    "surge": "^0.21.3",
+    "typescript": "^3.7.0-beta"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "typeface-lancelot": "^0.0.71"
+  }
+}
