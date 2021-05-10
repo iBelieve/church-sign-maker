@@ -22,7 +22,7 @@
     "typescript": "^3.7.0-beta"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "typeface-lancelot": "^0.0.71"
